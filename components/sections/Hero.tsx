@@ -22,10 +22,38 @@ export default function Hero() {
             real-world impact and modern web technologies.
           </p>
 
-          {/* Scroll hint */}
-          <p className="mt-10 text-sm text-gray-500 animate-pulse">
-            Scroll to explore ↓
-          </p>
+          {/* STATS SECTION (FIXED SPACING) */}
+          <div className="mt-14 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
+
+            <div className="p-3 transition hover:scale-105">
+              <h3 className="text-2xl md:text-3xl font-bold text-white">
+                15+
+              </h3>
+              <p className="text-gray-400 mt-2">Projects</p>
+            </div>
+
+            <div className="p-3 transition hover:scale-105">
+              <h3 className="text-2xl md:text-3xl font-bold text-white">
+                10+
+              </h3>
+              <p className="text-gray-400 mt-2">Technologies</p>
+            </div>
+
+            <div className="p-3 transition hover:scale-105">
+              <h3 className="text-2xl md:text-3xl font-bold text-white">
+                5
+              </h3>
+              <p className="text-gray-400 mt-2">Domains</p>
+            </div>
+
+            <div className="p-3 transition hover:scale-105">
+              <h3 className="text-2xl md:text-3xl font-bold text-white">
+                2027
+              </h3>
+              <p className="text-gray-400 mt-2">Graduation</p>
+            </div>
+
+          </div>
 
         </div>
 
