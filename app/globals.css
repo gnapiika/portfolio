@@ -1,48 +1,148 @@
 @import "tailwindcss";
 
-:root{
-  --background:#030712;
-  --foreground:#ffffff;
-  --primary:#3b82f6;
-  --secondary:#8b5cf6;
+/* =========================
+   CSS Variables
+========================= */
+:root {
+  --background: #030712;
+  --foreground: #ffffff;
+
+  --primary: #3b82f6;
+  --secondary: #8b5cf6;
+
+  --card: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.08);
 }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+/* =========================
+   Reset
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-  scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-  background:var(--background);
-  color:var(--foreground);
-  overflow-x:hidden;
-  font-family:var(--font-geist-sans);
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  font-family: var(--font-geist-sans);
 }
 
-h1,h2,h3,h4{
-  font-family:var(--font-heading);
+/* =========================
+   Typography
+========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
 }
 
-section{
-  position:relative;
-  padding:120px 8%;
+/* =========================
+   Sections
+========================= */
+
+section {
+  position: relative;
+  padding: 120px 8%;
 }
 
-::-webkit-scrollbar{
-  width:8px;
+/* =========================
+   Scrollbar
+========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-::-webkit-scrollbar-thumb{
-  background:#3b82f6;
-  border-radius:20px;
+::-webkit-scrollbar-track {
+  background: #020617;
 }
 
-::selection{
-  background:#3b82f6;
-  color:white;
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    #3b82f6,
+    #8b5cf6
+  );
+  border-radius: 999px;
+}
+
+/* =========================
+   Text Selection
+========================= */
+
+::selection {
+  background: #3b82f6;
+  color: white;
+}
+
+/* =========================
+   Utility Classes
+========================= */
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    #22d3ee,
+    #3b82f6,
+    #8b5cf6
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+
+  background-size: 50px 50px;
+}
+
+.glow {
+  box-shadow:
+    0 0 30px rgba(59,130,246,.35),
+    0 0 80px rgba(139,92,246,.25);
+}
+
+/* =========================
+   Animations
+========================= */
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float {
+  animation: float 5s ease-in-out infinite;
 }
