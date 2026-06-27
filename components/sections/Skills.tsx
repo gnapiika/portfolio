@@ -1,100 +1,83 @@
+'use client';
+
 import Section from '@/components/common/Section';
-import {
-  SiPython,
-  SiJavascript,
-  SiTypescript,
-  SiReact,
-  SiNextdotjs,
-  SiTailwindcss,
-  SiDocker,
-  SiGit,
-  SiGithub,
-  SiMysql,
-  SiMongodb,
-  SiCplusplus,
-  SiTensorflow,
-} from 'react-icons/si';
+import { motion } from 'framer-motion';
 
-import { FaJava } from 'react-icons/fa6';
-
-const skillCategories = [
-  {
-    title: 'Programming',
-    skills: [
-      { name: 'Python', icon: SiPython, level: 90 },
-      { name: 'Java', icon: FaJava, level: 85 },
-      { name: 'C++', icon: SiCplusplus, level: 85 },
-      { name: 'JavaScript', icon: SiJavascript, level: 85 },
-      { name: 'TypeScript', icon: SiTypescript, level: 80 },
-    ],
-  },
-  {
-    title: 'Frontend',
-    skills: [
-      { name: 'React', icon: SiReact, level: 90 },
-      { name: 'Next.js', icon: SiNextdotjs, level: 85 },
-      { name: 'Tailwind CSS', icon: SiTailwindcss, level: 90 },
-    ],
-  },
-  {
-    title: 'Backend & Database',
-    skills: [
-      { name: 'MySQL', icon: SiMysql, level: 85 },
-      { name: 'MongoDB', icon: SiMongodb, level: 80 },
-      { name: 'Docker', icon: SiDocker, level: 70 },
-    ],
-  },
-  {
-    title: 'Tools & AI',
-    skills: [
-      { name: 'Git', icon: SiGit, level: 90 },
-      { name: 'GitHub', icon: SiGithub, level: 90 },
-      { name: 'TensorFlow', icon: SiTensorflow, level: 75 },
-    ],
-  },
+const skills = [
+  { name: 'Python', level: 90 },
+  { name: 'Java', level: 85 },
+  { name: 'C++', level: 85 },
+  { name: 'JavaScript', level: 85 },
+  { name: 'TypeScript', level: 80 },
+  { name: 'React', level: 90 },
+  { name: 'Next.js', level: 85 },
+  { name: 'Tailwind', level: 90 },
+  { name: 'Docker', level: 70 },
+  { name: 'MongoDB', level: 80 },
 ];
+
+function RadialSkill({ name, level }: { name: string; level: number }) {
+  const radius = 42;
+  const stroke = 6;
+  const normalizedRadius = radius - stroke * 2;
+  const circumference = normalizedRadius * 2 * Math.PI;
+  const strokeDashoffset =
+    circumference - (level / 100) * circumference;
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      className="flex flex-col items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md"
+    >
+      <svg height={radius * 2} width={radius * 2}>
+        <circle
+          stroke="rgba(255,255,255,0.08)"
+          fill="transparent"
+          strokeWidth={stroke}
+          r={normalizedRadius}
+          cx={radius}
+          cy={radius}
+        />
+        <circle
+          stroke="url(#grad)"
+          fill="transparent"
+          strokeWidth={stroke}
+          strokeLinecap="round"
+          strokeDasharray={circumference}
+          strokeDashoffset={strokeDashoffset}
+          r={normalizedRadius}
+          cx={radius}
+          cy={radius}
+        />
+        <defs>
+          <linearGradient id="grad">
+            <stop offset="0%" stopColor="#22d3ee" />
+            <stop offset="100%" stopColor="#3b82f6" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <div className="mt-3 text-center">
+        <p className="text-sm font-medium text-white">{name}</p>
+        <p className="text-xs text-white/60">{level}%</p>
+      </div>
+    </motion.div>
+  );
+}
 
 export default function Skills() {
   return (
     <Section id="skills" title="Skills">
-      <div className="grid gap-8 md:grid-cols-2">
-        {skillCategories.map((category) => (
-          <div
-            key={category.title}
-            className="glass rounded-3xl p-8 transition duration-300 hover:-translate-y-2"
-          >
-            <h3 className="mb-8 text-2xl font-bold text-cyan-400">
-              {category.title}
-            </h3>
-
-            <div className="space-y-6">
-              {category.skills.map((skill) => {
-                const Icon = skill.icon;
-
-                return (
-                  <div key={skill.name}>
-                    <div className="mb-2 flex items-center justify-between">
-                      <div className="flex items-center gap-3">
-                        <Icon className="text-2xl text-cyan-400" />
-                        <span>{skill.name}</span>
-                      </div>
-
-                      <span>{skill.level}%</span>
-                    </div>
-
-                    <div className="h-2 rounded-full bg-white/10">
-                      <div
-                        className="h-2 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500"
-                        style={{
-                          width: `${skill.level}%`,
-                        }}
-                      />
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {skills.map((skill) => (
+          <RadialSkill
+            key={skill.name}
+            name={skill.name}
+            level={skill.level}
+          />
         ))}
       </div>
     </Section>

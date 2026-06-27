@@ -6,9 +6,7 @@ import GlassCard from '@/components/ui/GlassCard';
 export default function HeroImage() {
   return (
     <div className="flex justify-center">
-
       <GlassCard>
-
         <Image
           src="/images/profile.jpeg"
           alt="Gnapika Reddy"
@@ -17,9 +15,7 @@ export default function HeroImage() {
           priority
           className="rounded-3xl object-cover"
         />
-
       </GlassCard>
-
     </div>
   );
 }
