@@ -12,9 +12,10 @@ const projects = [
       'Modern animated portfolio built with Next.js, Tailwind CSS, and glassmorphism UI.',
   },
   {
-    title: 'Game Dev Mini Engine',
+    title: 'Deepfake Detection Platform',
     description:
-      'A lightweight 2D game engine built using JavaScript and Canvas API.',
+      'AI-powered deepfake detection system that analyzes videos to identify manipulated content.',
+    live: 'https://deep-shield-deepfake-detection.vercel.app/',
   },
 ];
 
@@ -30,7 +31,20 @@ export default function Projects() {
             <h3 className="mb-2 text-xl font-bold text-white">
               {project.title}
             </h3>
+
             <p className="text-gray-400">{project.description}</p>
+
+            {/* Live link (only for projects that have it) */}
+            {project.live && (
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 text-cyan-400 hover:underline"
+              >
+                View Project →
+              </a>
+            )}
           </div>
         ))}
       </div>
