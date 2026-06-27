@@ -17,43 +17,17 @@ export default function Hero() {
             Cybersecurity • AI • Data Science • Full Stack Developer
           </p>
 
-          <p className="mt-6 text-gray-500 max-w-xl">
+          {/* EXTRA GAP BELOW FULL STACK LINE */}
+          <div className="mt-8"></div>
+
+          <p className="text-gray-500 max-w-xl">
             Building secure, intelligent, and scalable systems with a focus on
             real-world impact and modern web technologies.
           </p>
 
-          {/* STATS SECTION (FIXED SPACING) */}
-          <div className="mt-14 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
-
-            <div className="p-3 transition hover:scale-105">
-              <h3 className="text-2xl md:text-3xl font-bold text-white">
-                15+
-              </h3>
-              <p className="text-gray-400 mt-2">Projects</p>
-            </div>
-
-            <div className="p-3 transition hover:scale-105">
-              <h3 className="text-2xl md:text-3xl font-bold text-white">
-                10+
-              </h3>
-              <p className="text-gray-400 mt-2">Technologies</p>
-            </div>
-
-            <div className="p-3 transition hover:scale-105">
-              <h3 className="text-2xl md:text-3xl font-bold text-white">
-                5
-              </h3>
-              <p className="text-gray-400 mt-2">Domains</p>
-            </div>
-
-            <div className="p-3 transition hover:scale-105">
-              <h3 className="text-2xl md:text-3xl font-bold text-white">
-                2027
-              </h3>
-              <p className="text-gray-400 mt-2">Graduation</p>
-            </div>
-
-          </div>
+          <p className="mt-10 text-sm text-gray-500 animate-pulse">
+            Scroll to explore ↓
+          </p>
 
         </div>
 
