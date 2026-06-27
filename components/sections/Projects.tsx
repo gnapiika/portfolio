@@ -22,7 +22,8 @@ const projects = [
 export default function Projects() {
   return (
     <Section id="projects" title="Projects">
-      <div className="grid gap-6 md:grid-cols-2">
+      {/* 🛠️ Added mt-10 to create a distinct space between the section heading and the project cards */}
+      <div className="grid gap-6 md:grid-cols-2 mt-10">
         {projects.map((project) => (
           <div
             key={project.title}
