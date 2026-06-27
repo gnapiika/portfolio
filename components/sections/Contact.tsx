@@ -16,7 +16,7 @@ export default function Contact() {
         <div className="flex justify-center gap-10">
           {/* Email */}
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:gnapiika@gmail.com"
             className="transition hover:text-cyan-400"
           >
             <svg
@@ -35,7 +35,7 @@ export default function Contact() {
 
           {/* GitHub */}
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/gnapiika"
             target="_blank"
             rel="noopener noreferrer"
             className="transition hover:text-cyan-400"
@@ -53,7 +53,7 @@ export default function Contact() {
 
           {/* LinkedIn */}
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/gnapiika"
             target="_blank"
             rel="noopener noreferrer"
             className="transition hover:text-cyan-400"
