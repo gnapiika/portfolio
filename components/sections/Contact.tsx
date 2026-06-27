@@ -13,7 +13,7 @@ export default function Contact() {
           collaborations, and exciting software development opportunities.
         </p>
 
-        <div className="flex justify-center gap-10">
+        <div className="flex justify-center gap-8 flex-wrap">
           {/* Email */}
           <a
             href="mailto:gnapiika@gmail.com"
@@ -66,6 +66,24 @@ export default function Contact() {
               fill="currentColor"
             >
               <path d="M4 4h4v16H4zM6 2a2 2 0 110 4 2 2 0 010-4zm6 6h4v2h.1c.6-1 2-2 4-2 4 0 4.9 2.6 4.9 6v8h-4v-7c0-1.7 0-3-2-3s-2 1.5-2 3v7h-4V8z" />
+            </svg>
+          </a>
+
+          {/* Instagram */}
+          <a
+            href="https://instagram.com/gnapiika"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:text-pink-400"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2a1 1 0 110 2 1 1 0 010-2zm-5 3a6 6 0 110 12 6 6 0 010-12z" />
             </svg>
           </a>
         </div>
