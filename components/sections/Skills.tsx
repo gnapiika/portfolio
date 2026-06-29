@@ -10,7 +10,6 @@ const categories = [
       'Ethical Hacking',
       'Digital Forensics',
       'Wireshark',
-      'Burp Suite',
       'Kali Linux',
       'Nmap',
     ],
