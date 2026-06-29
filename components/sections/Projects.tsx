@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: 'Personal Portfolio Website',
-    description:
+    description: 
       'A premium portfolio built with Next.js, TypeScript, Tailwind CSS and Framer Motion to showcase my projects, skills and experience.',
     image: '/images/projects/portfolio.png',
     github: 'https://github.com/gnapiika/portfolio',

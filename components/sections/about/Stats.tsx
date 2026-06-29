@@ -1,6 +1,6 @@
 const stats = [
   {
-    number: '15+',
+    number: '10+',
     label: 'Projects',
   },
   {
@@ -8,7 +8,7 @@ const stats = [
     label: 'Technologies',
   },
   {
-    number: '4',
+    number: '4+',
     label: 'Domains',
   },
   {
