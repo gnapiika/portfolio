@@ -32,7 +32,7 @@ const cards = [
 
 const stats = [
   {
-    value: '15+',
+    value: '10+',
     label: 'Projects',
   },
   {
@@ -40,7 +40,7 @@ const stats = [
     label: 'Technologies',
   },
   {
-    value: '5',
+    value: '4+',
     label: 'Domains',
   },
   {
