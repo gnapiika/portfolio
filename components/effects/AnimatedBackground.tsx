@@ -8,28 +8,39 @@ export default function AnimatedBackground() {
 
       <motion.div
         animate={{
-          x: [0, 120, -120, 0],
+          x: [0, 120, -80, 0],
           y: [0, -80, 80, 0],
         }}
         transition={{
-          duration: 20,
+          duration: 18,
           repeat: Infinity,
           ease: 'easeInOut',
         }}
-        className="absolute left-10 top-20 h-96 w-96 rounded-full bg-blue-600/30 blur-[140px]"
+        className="absolute left-0 top-10 h-[520px] w-[520px] rounded-full bg-pink-300/40 blur-[170px]"
       />
 
       <motion.div
         animate={{
-          x: [0, -120, 120, 0],
-          y: [0, 120, -120, 0],
+          x: [0, -120, 80, 0],
+          y: [0, 120, -100, 0],
         }}
         transition={{
-          duration: 25,
+          duration: 22,
           repeat: Infinity,
           ease: 'easeInOut',
         }}
-        className="absolute right-0 bottom-0 h-[500px] w-[500px] rounded-full bg-purple-600/30 blur-[160px]"
+        className="absolute bottom-0 right-0 h-[600px] w-[600px] rounded-full bg-purple-300/35 blur-[190px]"
+      />
+
+      <motion.div
+        animate={{
+          scale: [1, 1.15, 1],
+        }}
+        transition={{
+          duration: 12,
+          repeat: Infinity,
+        }}
+        className="absolute left-1/2 top-1/2 h-[350px] w-[350px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-pink-200/25 blur-[140px]"
       />
 
     </div>

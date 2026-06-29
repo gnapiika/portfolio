@@ -1,85 +1,146 @@
-'use client';
-
 import Section from '@/components/common/Section';
-import { motion } from 'framer-motion';
+import FadeUp from '@/components/common/FadeUp';
 
-const skills = [
-  { name: 'Python', level: 90 },
-  { name: 'Java', level: 85 },
-  { name: 'C++', level: 85 },
-  { name: 'JavaScript', level: 85 },
-  { name: 'TypeScript', level: 80 },
-  { name: 'React', level: 90 },
-  { name: 'Next.js', level: 85 },
-  { name: 'Tailwind', level: 90 },
-  { name: 'Docker', level: 70 },
-  { name: 'MongoDB', level: 80 },
+const categories = [
+  {
+    title: 'Cybersecurity',
+    
+    skills: [
+      'Network Security',
+      'Ethical Hacking',
+      'Digital Forensics',
+      'Wireshark',
+      'Burp Suite',
+      'Kali Linux',
+      'Nmap',
+    ],
+  },
+  {
+    title: 'Artificial Intelligence',
+    
+    skills: [
+      'Machine Learning',
+      'Deep Learning',
+      'TensorFlow',
+      'PyTorch',
+      'OpenCV',
+      'Scikit-Learn',
+      'Computer Vision',
+    ],
+  },
+  {
+    title: 'Full Stack Development',
+    
+    skills: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'Node.js',
+      'Express.js',
+      'REST APIs',
+    ],
+  },
+  {
+    title: 'Programming',
+    
+    skills: [
+      'Python',
+      'Java',
+      'C++',
+      'JavaScript',
+      'SQL',
+      'Git',
+      'GitHub',
+    ],
+  },
+  {
+    title: 'Data Science',
+    
+    skills: [
+      'Pandas',
+      'NumPy',
+      'Matplotlib',
+      'Data Analysis',
+      'Data Visualization',
+      'Feature Engineering',
+    ],
+  },
+  {
+    title: 'Game Development',
+    
+    skills: [
+      'Unity',
+      'Unreal Engine',
+      'Blender',
+      'Game Physics',
+      'C#',
+      'Level Design',
+    ],
+  },
 ];
-
-function RadialSkill({ name, level }: { name: string; level: number }) {
-  const radius = 42;
-  const stroke = 6;
-  const normalizedRadius = radius - stroke * 2;
-  const circumference = normalizedRadius * 2 * Math.PI;
-  const strokeDashoffset =
-    circumference - (level / 100) * circumference;
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.8 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-      viewport={{ once: true }}
-      className="flex flex-col items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md"
-    >
-      <svg height={radius * 2} width={radius * 2}>
-        <circle
-          stroke="rgba(255,255,255,0.08)"
-          fill="transparent"
-          strokeWidth={stroke}
-          r={normalizedRadius}
-          cx={radius}
-          cy={radius}
-        />
-        <circle
-          stroke="url(#grad)"
-          fill="transparent"
-          strokeWidth={stroke}
-          strokeLinecap="round"
-          strokeDasharray={circumference}
-          strokeDashoffset={strokeDashoffset}
-          r={normalizedRadius}
-          cx={radius}
-          cy={radius}
-        />
-        <defs>
-          <linearGradient id="grad">
-            <stop offset="0%" stopColor="#22d3ee" />
-            <stop offset="100%" stopColor="#3b82f6" />
-          </linearGradient>
-        </defs>
-      </svg>
-
-      <div className="mt-3 text-center">
-        <p className="text-sm font-medium text-white">{name}</p>
-        <p className="text-xs text-white/60">{level}%</p>
-      </div>
-    </motion.div>
-  );
-}
 
 export default function Skills() {
   return (
     <Section id="skills" title="Skills">
-      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {skills.map((skill) => (
-          <RadialSkill
-            key={skill.name}
-            name={skill.name}
-            level={skill.level}
-          />
-        ))}
-      </div>
+      <FadeUp>
+
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+
+          {categories.map((category) => (
+
+            <div
+              key={category.title}
+              className="glass rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(236,72,153,.18)]"
+            >
+
+              <div className="mb-6 flex items-center gap-3">
+
+                <span className="text-4xl">
+                  
+                </span>
+
+                <h3 className="text-2xl font-bold text-gray-900">
+                  {category.title}
+                </h3>
+
+              </div>
+
+              <div className="flex flex-wrap gap-3">
+
+                {category.skills.map((skill) => (
+
+                  <span
+                    key={skill}
+                    className="
+                    rounded-full
+                    bg-pink-100
+                    px-4
+                    py-2
+                    text-sm
+                    font-medium
+                    text-pink-700
+                    transition-all
+                    duration-300
+                    hover:scale-105
+                    hover:bg-pink-500
+                    hover:text-white
+                    "
+                  >
+                    {skill}
+                  </span>
+
+                ))}
+
+              </div>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </FadeUp>
     </Section>
   );
 }

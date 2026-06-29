@@ -1,148 +1,277 @@
 @import "tailwindcss";
 
-/* =========================
-   CSS Variables
-========================= */
-:root {
-  --background: #030712;
-  --foreground: #ffffff;
+/* ===========================================
+   GLOBAL THEME
+=========================================== */
 
-  --primary: #3b82f6;
-  --secondary: #8b5cf6;
+:root{
 
-  --card: rgba(255, 255, 255, 0.05);
-  --border: rgba(255, 255, 255, 0.08);
+--background:#FFF7FB;
+
+--foreground:#32253A;
+
+--primary:#EC4899;
+
+--secondary:#A855F7;
+
+--card:rgba(255,255,255,.65);
+
+--border:rgba(255,255,255,.75);
+
 }
 
-/* =========================
-   Reset
-========================= */
+/* ===========================================
+RESET
+=========================================== */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
 }
 
-html {
-  scroll-behavior: smooth;
+html{
+
+scroll-behavior:smooth;
+
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  overflow-x: hidden;
-  font-family: var(--font-geist-sans);
+body{
+
+font-family:var(--font-body);
+
+background:
+
+radial-gradient(circle at 0% 10%,
+#FFD9EA 0%,
+transparent 30%),
+
+radial-gradient(circle at 100% 0%,
+#F5D0FE 0%,
+transparent 35%),
+
+radial-gradient(circle at 50% 100%,
+#FFE6F3 0%,
+transparent 40%),
+
+#FFF7FB;
+
+color:var(--foreground);
+
+overflow-x:hidden;
+
+min-height:100vh;
+
 }
 
-/* =========================
-   Typography
-========================= */
+/* ===========================================
+TYPOGRAPHY
+=========================================== */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading);
+h1,h2,h3,h4,h5,h6{
+
+font-family:var(--font-heading);
+
+font-weight:700;
+
 }
 
-/* =========================
-   Sections
-========================= */
+p{
 
-section {
-  position: relative;
-  padding: 120px 8%;
+line-height:1.8;
+
 }
 
-/* =========================
-   Scrollbar
-========================= */
+/* ===========================================
+SECTION
+=========================================== */
 
-::-webkit-scrollbar {
-  width: 8px;
+section{
+
+padding:120px 8%;
+
+position:relative;
+
 }
 
-::-webkit-scrollbar-track {
-  background: #020617;
+/* ===========================================
+GLASS
+=========================================== */
+
+.glass{
+
+background:rgba(255,255,255,.60);
+
+backdrop-filter:blur(30px);
+
+border:1px solid rgba(255,255,255,.8);
+
+box-shadow:
+
+0 12px 40px rgba(236,72,153,.10);
+
 }
 
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    #3b82f6,
-    #8b5cf6
-  );
-  border-radius: 999px;
+/* ===========================================
+TEXT
+=========================================== */
+
+.gradient-text{
+
+background:
+
+linear-gradient(
+90deg,
+#EC4899,
+#D946EF,
+#8B5CF6
+);
+
+-webkit-background-clip:text;
+
+background-clip:text;
+
+color:transparent;
+
 }
 
-/* =========================
-   Text Selection
-========================= */
+/* ===========================================
+BUTTON
+=========================================== */
 
-::selection {
-  background: #3b82f6;
-  color: white;
+.primary-button{
+
+background:
+
+linear-gradient(
+135deg,
+#EC4899,
+#A855F7
+);
+
+color:white;
+
+border-radius:999px;
+
+padding:14px 28px;
+
+transition:.3s;
+
 }
 
-/* =========================
-   Utility Classes
-========================= */
+.primary-button:hover{
 
-.gradient-text {
-  background: linear-gradient(
-    90deg,
-    #22d3ee,
-    #3b82f6,
-    #8b5cf6
-  );
+transform:translateY(-3px);
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+box-shadow:
 
-  background-clip: text;
-  color: transparent;
+0 20px 40px rgba(236,72,153,.25);
+
 }
 
-.glass {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+/* ===========================================
+SCROLLBAR
+=========================================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
 }
 
-.hero-grid {
-  background-image:
-    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+::-webkit-scrollbar-track{
 
-  background-size: 50px 50px;
+background:#FFF4FA;
+
 }
 
-.glow {
-  box-shadow:
-    0 0 30px rgba(59,130,246,.35),
-    0 0 80px rgba(139,92,246,.25);
+::-webkit-scrollbar-thumb{
+
+background:
+
+linear-gradient(
+#EC4899,
+#A855F7
+);
+
+border-radius:999px;
+
 }
 
-/* =========================
-   Animations
-========================= */
+/* ===========================================
+SELECTION
+=========================================== */
 
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
+::selection{
 
-  50% {
-    transform: translateY(-15px);
-  }
+background:#EC4899;
 
-  100% {
-    transform: translateY(0px);
-  }
+color:white;
+
 }
 
-.float {
-  animation: float 5s ease-in-out infinite;
+/* ===========================================
+FLOAT ANIMATION
+=========================================== */
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+.float{
+
+animation:float 6s ease-in-out infinite;
+
+}
+
+/* ===========================================
+FADE IN
+=========================================== */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.fade-up{
+
+animation:fadeUp .8s ease forwards;
+
 }

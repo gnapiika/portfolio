@@ -1,53 +1,50 @@
 import Section from '@/components/common/Section';
+import FadeUp from '@/components/common/FadeUp';
 import {
-  GraduationCap,
   Shield,
   Brain,
   Code2,
+  GraduationCap,
 } from 'lucide-react';
 
-const highlights = [
+const cards = [
   {
     icon: GraduationCap,
     title: 'Education',
-    description:
-      '7th Semester Computer Science Engineering student specializing in Cybersecurity, AI, Data Science, Full Stack Development, and Game Development.',
+    text: '7th Semester Computer Science Engineering student passionate about solving real-world problems through technology.',
   },
   {
     icon: Shield,
     title: 'Cybersecurity',
-    description:
-      'Interested in network security, ethical hacking, digital forensics, and secure software development.',
+    text: 'Interested in ethical hacking, digital forensics, network security, secure software engineering, and threat detection.',
   },
   {
     icon: Brain,
     title: 'Artificial Intelligence',
-    description:
-      'Developing intelligent applications using Machine Learning, Deep Learning, and Data Science.',
+    text: 'Building intelligent applications using Machine Learning, Deep Learning, Computer Vision, and Data Science.',
   },
   {
     icon: Code2,
     title: 'Full Stack Development',
-    description:
-      'Building responsive, scalable, and modern web applications using React, Next.js, TypeScript, and Python.',
+    text: 'Creating fast, responsive and scalable web applications with modern technologies and beautiful user experiences.',
   },
 ];
 
 const stats = [
   {
-    number: '15+',
+    value: '15+',
     label: 'Projects',
   },
   {
-    number: '10+',
+    value: '10+',
     label: 'Technologies',
   },
   {
-    number: '5',
+    value: '5',
     label: 'Domains',
   },
   {
-    number: '2027',
+    value: '2027',
     label: 'Graduation',
   },
 ];
@@ -55,77 +52,104 @@ const stats = [
 export default function About() {
   return (
     <Section id="about" title="About Me">
-      <div className="grid gap-12 lg:grid-cols-2">
+      <FadeUp>
 
-        {/* Left Side */}
-        <div>
-          <p className="text-lg leading-8 text-gray-400">
-            I'm <span className="font-semibold text-white">Gnapika Reddy</span>,
-            a passionate Computer Science Engineering student dedicated to
-            creating secure, intelligent, and scalable software solutions.
+        <div className="grid gap-20 lg:grid-cols-2">
 
-            <br />
-            <br />
+          {/* LEFT */}
 
-            My interests span across Cybersecurity, Artificial Intelligence,
-            Data Science, Full Stack Development, and Game Development. I enjoy
-            solving real-world problems through technology while continuously
-            learning new tools and frameworks.
+          <div>
 
-            <br />
-            <br />
-
-            My goal is to become a software engineer who develops impactful,
-            secure, and innovative products that improve people's lives.
-          </p>
-        </div>
-
-        {/* Right Side */}
-        <div className="grid gap-6">
-          {highlights.map((item) => {
-            const Icon = item.icon;
-
-            return (
-              <div
-                key={item.title}
-                className="glass rounded-2xl p-6 transition duration-300 hover:-translate-y-2 hover:border-cyan-400/30"
-              >
-                <Icon
-                  size={32}
-                  className="mb-4 text-cyan-400"
-                />
-
-                <h3 className="mb-2 text-xl font-bold">
-                  {item.title}
-                </h3>
-
-                <p className="text-gray-400">
-                  {item.description}
-                </p>
-              </div>
-            );
-          })}
-        </div>
-
-      </div>
-
-      {/* Statistics Container - Fixed with explicit width and responsive spacing clear */}
-      <div className="w-full mt-20 pt-10 grid grid-cols-2 gap-6 md:grid-cols-4 border-t border-white/5">
-        {stats.map((stat) => (
-          <div
-            key={stat.label}
-            className="glass rounded-2xl p-6 text-center transition duration-300 hover:-translate-y-2"
-          >
-            <h3 className="text-4xl font-black text-cyan-400">
-              {stat.number}
+            <h3 className="mb-8 text-4xl font-bold text-gray-900">
+              Passionate about building
+              <span className="gradient-text"> secure & intelligent </span>
+              software.
             </h3>
 
-            <p className="mt-2 text-gray-400">
-              {stat.label}
+            <p className="mb-6 text-lg leading-9 text-gray-700">
+              I'm <span className="font-semibold text-pink-600">Gnapika Reddy</span>,
+              a Computer Science Engineering student with interests spanning
+              Cybersecurity, Artificial Intelligence, Data Science,
+              Full Stack Development and Game Development.
             </p>
+
+            <p className="mb-6 text-lg leading-9 text-gray-700">
+              I enjoy transforming ideas into real applications that are
+              secure, scalable and user-friendly while continuously learning
+              modern technologies.
+            </p>
+
+            <p className="text-lg leading-9 text-gray-700">
+              My goal is to become a Software Engineer building impactful
+              products that combine innovation with security.
+            </p>
+
           </div>
-        ))}
-      </div>
+
+          {/* RIGHT */}
+
+          <div className="grid gap-6">
+
+            {cards.map((card) => {
+
+              const Icon = card.icon;
+
+              return (
+
+                <div
+                  key={card.title}
+                  className="glass rounded-3xl p-7 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(236,72,153,.18)]"
+                >
+
+                  <Icon
+                    size={34}
+                    className="mb-5 text-pink-500"
+                  />
+
+                  <h3 className="mb-3 text-2xl font-bold text-gray-900">
+                    {card.title}
+                  </h3>
+
+                  <p className="leading-8 text-gray-600">
+                    {card.text}
+                  </p>
+
+                </div>
+
+              );
+
+            })}
+
+          </div>
+
+        </div>
+
+        {/* STATS */}
+
+        <div className="mt-24 grid grid-cols-2 gap-6 md:grid-cols-4">
+
+          {stats.map((item) => (
+
+            <div
+              key={item.label}
+              className="glass rounded-3xl p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(236,72,153,.15)]"
+            >
+
+              <h2 className="gradient-text text-5xl font-black">
+                {item.value}
+              </h2>
+
+              <p className="mt-3 font-medium text-gray-600">
+                {item.label}
+              </p>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </FadeUp>
     </Section>
   );
 }

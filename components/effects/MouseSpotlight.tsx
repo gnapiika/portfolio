@@ -1,36 +1,36 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { motion, useMotionValue, useSpring } from 'motion/react';
 
 export default function MouseSpotlight() {
-  const [position, setPosition] = useState({
-    x: 0,
-    y: 0,
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  const mouseX = useSpring(x, {
+    stiffness: 80,
+    damping: 25,
   });
 
-  useEffect(() => {
-    const move = (e: MouseEvent) => {
-      setPosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
-
-    window.addEventListener('mousemove', move);
-
-    return () => window.removeEventListener('mousemove', move);
-  }, []);
+  const mouseY = useSpring(y, {
+    stiffness: 80,
+    damping: 25,
+  });
 
   return (
-    <div
-      className="pointer-events-none fixed inset-0 z-0"
-      style={{
-        background: `radial-gradient(
-          350px at ${position.x}px ${position.y}px,
-          rgba(59,130,246,0.15),
-          transparent 80%
-        )`,
+    <motion.div
+      onMouseMove={(e) => {
+        x.set(e.clientX - 200);
+        y.set(e.clientY - 200);
       }}
-    />
+      className="fixed inset-0 pointer-events-none z-0"
+    >
+      <motion.div
+        style={{
+          x: mouseX,
+          y: mouseY,
+        }}
+        className="h-[400px] w-[400px] rounded-full bg-pink-300/20 blur-[120px]"
+      />
+    </motion.div>
   );
 }

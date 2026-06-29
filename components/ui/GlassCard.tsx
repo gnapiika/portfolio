@@ -6,14 +6,16 @@ export default function GlassCard({
   return (
     <div
       className="
-      rounded-3xl
-      border
-      border-white/10
-      bg-white/5
+      rounded-[32px]
+      bg-white/60
+      border border-white
+      backdrop-blur-3xl
+      shadow-[0_25px_60px_rgba(236,72,153,.18)]
       p-8
-      backdrop-blur-2xl
-      shadow-2xl
-    "
+      transition-all
+      duration-500
+      hover:-translate-y-2
+      "
     >
       {children}
     </div>
