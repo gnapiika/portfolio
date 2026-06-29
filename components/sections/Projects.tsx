@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'DeepShield - Deepfake Detection Platform',
     description:
-      'An AI-powered deepfake detection platform that analyzes manipulated images and videos using deep learning. Built using Python, TensorFlow, OpenCV and deployed on Vercel.',
+      'An AI-powered deepfake detection platform that analyzes manipulated images and videos using deep learning. Built using Python, TensorFlow, OpenCV and deployed on Vercel. The platform provides a user-friendly interface for uploading media files and receiving real-time analysis results, helping users identify potential deepfake content effectively.',
     image: '/images/projects/deepfake.png',
     github: 'https://github.com/gnapiika/DeepShield-Deepfake-Detection',
     live: 'https://deep-shield-deepfake-detection.vercel.app/',
