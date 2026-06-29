@@ -74,7 +74,6 @@ const categories = [
       'Unreal Engine',
       'Blender',
       'Game Physics',
-      'C#',
       'Level Design',
     ],
   },
