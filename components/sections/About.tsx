@@ -36,7 +36,7 @@ const stats = [
     label: 'Projects',
   },
   {
-    value: '10+',
+    value: '12+',
     label: 'Technologies',
   },
   {
