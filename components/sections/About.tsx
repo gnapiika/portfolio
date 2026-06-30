@@ -76,7 +76,7 @@ export default function About() {
             <p className="mb-6 text-lg leading-9 text-gray-700">
               I enjoy transforming ideas into real applications that are
               secure, scalable and user-friendly while continuously learning
-              modern technologies.
+              modern technologies. I love exploring new domains, solving complex problems, and building innovative solutions that make a positive impact on people's lives.
             </p>
 
             <p className="text-lg leading-9 text-gray-700">
