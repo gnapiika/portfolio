@@ -81,7 +81,7 @@ export default function About() {
 
             <p className="text-lg leading-9 text-gray-700">
               My goal is to become a Software Engineer building impactful
-              products that combine innovation with security.
+              products that combine innovation with security. I am always open to new opportunities, collaborations, and challenges that allow me to grow as a developer and contribute to meaningful projects.
             </p>
 
           </div>
