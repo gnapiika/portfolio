@@ -5,7 +5,7 @@ export default function Contact() {
     <Section id="contact" title="Let's Connect">
       <div className="glass rounded-3xl p-10 text-center">
         <h3 className="mb-5 text-3xl font-bold">
-          Let's Build Something Amazing!
+          Let's Build Something Amazing and Make a Difference Together!
         </h3>
 
         <p className="mb-8 text-gray-400">
