@@ -32,7 +32,7 @@ const cards = [
 
 const stats = [
   {
-    value: '10+',
+    value: '15+',
     label: 'Projects',
   },
   {
