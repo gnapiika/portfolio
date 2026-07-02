@@ -18,6 +18,14 @@ const projects = [
     github: 'https://github.com/gnapiika/portfolio',
     live: '',
   },
+  {
+    title: 'Cyberpunk-Hacking-Stimulator',
+    description:
+      'A cyberpunk-themed hacking simulator game built with Unity. Players can experience a futuristic hacking environment, complete with challenges and missions that test their problem-solving skills and knowledge of cybersecurity concepts.',
+    image: '/images/projects/cyberpunk.png',
+    github: 'https://github.com/gnapiika/Cyberpunk-Hacking-Simulator',
+    live: '',
+  }
 ];
 
 export default function Projects() {
