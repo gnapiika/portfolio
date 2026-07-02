@@ -194,6 +194,6 @@ If you found this project interesting, consider giving it a ⭐ on GitHub.
 
 ---
 
-## 📄 License
+## License
 
 This project is open source and available under the **MIT License**.
