@@ -13,7 +13,7 @@ const projects = [
   {
     title: 'Personal Portfolio Website',
     description: 
-      'A premium portfolio built with Next.js, TypeScript, Tailwind CSS and Framer Motion to showcase my projects, skills and experience. Designed with a modern UI and smooth animations for an engaging user experience.',
+      'A premium portfolio built with Next.js, TypeScript, Tailwind CSS and Framer Motion to showcase my projects, skills and experience. Designed with a modern UI and smooth animations for an engaging user experience. The website is fully responsive and optimized for performance, making it accessible across various devices and screen sizes.',
     image: '/images/projects/portfolio.png',
     github: 'https://github.com/gnapiika/portfolio',
     live: '',
