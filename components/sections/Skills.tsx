@@ -69,7 +69,7 @@ const categories = [
     title: 'Game Development',
     
     skills: [
-      'Unity',
+      'Unity (CyberPunk-Hacking-Simulator)',
       'Unreal Engine',
       'Blender',
       'Game Physics',
