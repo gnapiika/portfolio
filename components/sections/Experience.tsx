@@ -4,7 +4,7 @@ export default function Experience() {
   return (
     <Section id="experience" title="Experience">
       <p className="text-gray-400">
-        I'm open to gain experience in the field of cybersecurity, artificial intelligence, data science, and full stack development. I am actively seeking internships and opportunities to apply my skills in real-world projects. If you have any opportunities or would like to collaborate, please feel free to reach out to me and we can discuss how I can contribute to your team or project. I am eager to learn and grow in a professional environment, and I am confident that my skills and passion for technology will make me a valuable asset to any organization.
+        I'm open to gain experience in the field of cybersecurity, artificial intelligence, data science, and full stack development. I am actively seeking internships and opportunities to apply my skills in real-world projects. If you have any opportunities or would like to collaborate, please feel free to reach out to me and we can discuss how I can contribute to your team or project. I am eager to learn and grow in a professional environment, and I am confident that my skills and passion for technology will make me a valuable asset to any organization and I am excited to contribute to innovative projects that make a positive impact in the world.
       </p>
     </Section>
   );
