@@ -21,7 +21,7 @@ const projects = [
   {
     title: 'Cyberpunk-Hacking-Stimulator',
     description:
-      'A cyberpunk-themed hacking simulator game built with Unity. Players can experience a futuristic hacking environment, complete with challenges and missions that test their problem-solving skills and knowledge of cybersecurity concepts. This is in process of development and will be released soon with more features and levels.',
+      'A cyberpunk-themed hacking simulator game built with Unity. Players can experience a futuristic hacking environment, complete with challenges and missions that test their problem-solving skills and knowledge of cybersecurity concepts. This is in process of development and will be released soon with more features and levels, providing an immersive gaming experience.',
     image: '/images/projects/cyberpunk.png',
     github: 'https://github.com/gnapiika/Cyberpunk-Hacking-Simulator',
     live: '',
