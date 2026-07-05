@@ -11,7 +11,7 @@ const cards = [
   {
     icon: GraduationCap,
     title: 'Education',
-    text: '7th Semester Computer Science Engineering student passionate about solving real-world problems through technology. This includes a strong foundation in programming, algorithms, data structures, and software development principles.',
+    text: '7th Semester Computer Science Engineering student passionate about solving real-world problems through technology. This includes a strong foundation in programming, algorithms, data structures, and software development principles with a focus on cybersecurity, artificial intelligence, data science, and full stack development.',
   },
   {
     icon: Shield,
