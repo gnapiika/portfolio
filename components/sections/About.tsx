@@ -16,7 +16,7 @@ const cards = [
   {
     icon: Shield,
     title: 'Cybersecurity',
-    text: 'Interested in ethical hacking, digital forensics, network security, secure software engineering, and threat detection.',
+    text: 'Interested in ethical hacking, digital forensics, network security, secure software engineering, and threat detection. I am passionate about protecting systems and data from cyber threats and ensuring the security of applications and networks.',
   },
   {
     icon: Brain,
