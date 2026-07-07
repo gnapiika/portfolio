@@ -21,7 +21,7 @@ const cards = [
   {
     icon: Brain,
     title: 'Artificial Intelligence',
-    text: 'Building intelligent applications using Machine Learning, Deep Learning, Computer Vision, and Data Science.',
+    text: 'Building intelligent applications using Machine Learning, Deep Learning, Computer Vision, and Data Science and exploring the potential of AI to solve complex problems and improve decision-making processes.',
   },
   {
     icon: Code2,
