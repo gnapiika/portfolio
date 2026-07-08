@@ -26,7 +26,7 @@ const cards = [
   {
     icon: Code2,
     title: 'Full Stack Development',
-    text: 'Creating fast, responsive and scalable web applications with modern technologies and beautiful user experiences.',
+    text: 'Creating fast, responsive and scalable web applications with modern technologies and beautiful user experiences. I enjoy working on both the front-end and back-end aspects of web development, building robust and efficient applications that meet user needs.',
   },
 ];
 
