@@ -10,7 +10,7 @@ export default function Contact() {
 
         <p className="mb-8 text-gray-400">
           I'm currently open to internships, freelance work, research
-          collaborations, and exciting software development opportunities. The best way to reach me is through email, and I will do my best to respond promptly. I look forward to connecting with you and exploring how we can work together to create innovative solutions.
+          collaborations, and exciting software development opportunities. The best way to reach me is through email, and I will do my best to respond promptly. I look forward to connecting with you and exploring how we can work together to create innovative solutions and make a positive impact in the world.
         </p>
 
         <div className="flex justify-center gap-8 flex-wrap">
