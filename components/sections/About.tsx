@@ -21,7 +21,7 @@ const cards = [
   {
     icon: Brain,
     title: 'Artificial Intelligence',
-    text: 'Building intelligent applications using Machine Learning, Deep Learning, Computer Vision, and Data Science and exploring the potential of AI to solve complex problems and improve decision-making processes. I am fascinated by the capabilities of AI and its applications in various domains, from healthcare to finance, and I am eager to contribute to the development of innovative AI solutions. A strong foundation in mathematics, statistics, and programming is essential for understanding and implementing AI algorithms effectively.',
+    text: 'Building intelligent applications using Machine Learning, Deep Learning, Computer Vision, and Data Science and exploring the potential of AI to solve complex problems and improve decision-making processes. I am fascinated by the capabilities of AI and its applications in various domains, from healthcare to finance, and I am very eager to contribute to the development of innovative AI solutions. A strong foundation in mathematics, statistics, and programming is essential for understanding and implementing AI algorithms effectively.',
   },
   {
     icon: Code2,
