@@ -71,7 +71,7 @@ export default function Contact() {
 
           {/* Instagram */}
           <a
-            href="https://instagram.com/gnapiika"
+            href="https://instagram.com/ignapika"
             target="_blank"
             rel="noopener noreferrer"
             className="transition hover:text-pink-400"
