@@ -20,8 +20,8 @@ const cards = [
   },
   {
     icon: Brain,
-    title: 'Artificial Intelligence',
-    text: 'Building intelligent applications and many more softwares using Machine Learning, Deep Learning, Computer Vision, and Data Science and exploring the potential of AI to solve all complex problems and improve decision-making processes. I am fascinated by the capabilities of AI and its applications in various domains, from healthcare to finance, and I am very eager to contribute to the development of innovative AI solutions. A strong foundation in mathematics, statistics, and programming is essential for understanding and implementing AI algorithms effectively.',
+    title: 'Web Development & AI',
+    text: 'Building modern, responsive, and user-focused web applications using modern technologies, clean design, and scalable development practices. I am very passionate about creating web applications that are not only visually appealing but also provide seamless user experiences. I enjoy working with front-end and back-end technologies, implementing AI algorithms, and integrating intelligent features into web applications to enhance functionality and user engagement.',
   },
   {
     icon: Code2,
@@ -32,15 +32,15 @@ const cards = [
 
 const stats = [
   {
-    value: '10+',
+    value: '4',
     label: 'Projects',
   },
   {
-    value: '10+',
-    label: 'Technologies',
+    value: '6',
+    label: 'Languages',
   },
   {
-    value: '4+',
+    value: '0',
     label: 'Domains',
   },
   {
@@ -69,8 +69,7 @@ export default function About() {
             <p className="mb-6 text-lg leading-9 text-gray-700">
               I'm <span className="font-semibold text-pink-600">Gnapika Reddy</span>,
               a Computer Science Engineering student with interests spanning
-              Cybersecurity, Artificial Intelligence, Data Science,
-              Full Stack Development and Game Development.
+              Cybersecurity, Web Development, Full Stack Development and Game Development.
             </p>
 
             <p className="mb-6 text-lg leading-9 text-gray-700">
@@ -80,8 +79,8 @@ export default function About() {
             </p>
 
             <p className="text-lg leading-9 text-gray-700">
-              My goal is to become a Software Engineer building impactful
-              products that combine innovation with security. I am always open to new opportunities, collaborations, and challenges that allow me to grow as a developer and contribute to meaningful projects.
+              My goal is to become a Web Developer and Cyber Security Enthusiast building impactful
+              applications that combine innovation with security. I am always open to new opportunities, collaborations, and challenges that allow me to grow as a developer and contribute to meaningful projects.
             </p>
 
           </div>
