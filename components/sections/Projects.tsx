@@ -16,16 +16,20 @@ const projects = [
       'A premium portfolio built with Next.js, TypeScript, Tailwind CSS and Framer Motion to showcase my projects, skills and experience. Designed with a modern UI and smooth animations for an engaging user experience. The website is fully responsive and optimized for performance, making it accessible across various devices and screen sizes.',
     image: '/images/projects/portfolio.png',
     github: 'https://github.com/gnapiika/portfolio',
-    live: '',
+    live: 'https://gnapika-portfolio.vercel.app/',
   },
   {
-    title: 'Cyberpunk-Hacking-Stimulator',
+    title: 'CyberTrace — Digital Forensics Investigation Platform',
+
     description:
-      'A cyberpunk-themed hacking simulator game built with Unity. Players can experience a futuristic hacking environment, complete with challenges and missions that test their problem-solving skills and knowledge of cybersecurity concepts. This is in process of development and will be released soon with more features and levels, providing an immersive gaming experience.',
-    image: '/images/projects/cyberpunk.png',
-    github: 'https://github.com/gnapiika/Cyberpunk-Hacking-Simulator',
-    live: '',
-  }
+        'A web-based digital forensics investigation platform built with Python and Flask. CyberTrace analyzes digital evidence, reconstructs chronological activity, detects suspicious behavior, correlates events across multiple evidence sources, calculates a heuristic risk score, and generates investigation reports.',
+
+    image: '/images/projects/cybertrace.png',
+
+    github: 'https://github.com/gnapiika/CyberTrace',
+
+    live: 'https://cybertrace-forensics.up.railway.app',
+},
 ];
 
 export default function Projects() {

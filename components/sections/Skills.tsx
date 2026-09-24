@@ -15,18 +15,20 @@ const categories = [
     ],
   },
   {
-    title: 'Artificial Intelligence',
-    
-    skills: [
-      'Machine Learning',
-      'Deep Learning',
-      'TensorFlow',
-      'PyTorch',
-      'OpenCV',
-      'Scikit-Learn',
-      'Computer Vision',
+    'title': 'Web Development',
+
+    'skills': [
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'React.js',
+        'Tailwind CSS',
+        'Python',
+        'Flask',
+        'REST APIs',
+        'Git & GitHub'
     ],
-  },
+},
   {
     title: 'Full Stack Development',
     
@@ -53,18 +55,7 @@ const categories = [
       'GitHub',
     ],
   },
-  {
-    title: 'Data Science',
-    
-    skills: [
-      'Pandas',
-      'NumPy',
-      'Matplotlib',
-      'Data Analysis',
-      'Data Visualization',
-      'Feature Engineering',
-    ],
-  },
+  
   {
     title: 'Game Development',
     
