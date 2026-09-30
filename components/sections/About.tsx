@@ -21,7 +21,7 @@ const cards = [
   {
     icon: Brain,
     title: 'Web Development & AI',
-    text: 'Building modern, responsive, and user-focused web applications using modern technologies, clean design, and scalable development practices. I am passionate about creating web applications that are not only visually appealing but also provide seamless user experiences. I enjoy working with front-end and back-end technologies, implementing AI algorithms, and integrating intelligent features into web applications to enhance functionality and user engagement.',
+    text: 'Building modern, responsive, and user-focused web applications using modern technologies, clean design, and scalable development practices. I am also passionate about creating web applications that are not only visually appealing but also provide seamless user experiences. I enjoy working with front-end and back-end technologies, implementing AI algorithms, and integrating intelligent features into web applications to enhance functionality and user engagement.',
   },
   {
     icon: Code2,
