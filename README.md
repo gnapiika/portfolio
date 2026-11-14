@@ -191,6 +191,7 @@ https://deep-shield-deepfake-detection.vercel.app/
 ## If you like this project
 
 If you found this project interesting, consider giving it a ⭐ on GitHub.
+Thank you!
 
 ---
 
