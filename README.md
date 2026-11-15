@@ -2,7 +2,7 @@
 
 A modern, responsive, and animated personal portfolio website showcasing my projects, technical skills, and experience in **Cybersecurity, Artificial Intelligence, Data Science, Full Stack Development, and Game Development**.
 
-Built with a premium UI inspired by modern portfolio designs, featuring smooth animations, glassmorphism, and a clean user experience.
+Built with a premium UI inspired by modern portfolio designs, featuring smooth animations, glassmorphism, and a very much clean user experience.
 
 ---
 
