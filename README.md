@@ -164,7 +164,7 @@ My interests include:
 - Full Stack Development
 - Game Development
 
-I enjoy learning modern technologies and building real-world projects that combine creativity, security, and innovation.
+I enjoy learning modern technologies and building real-world projects that combines creativity, security, and innovation.
 
 ---
 
